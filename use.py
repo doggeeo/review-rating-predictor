@@ -27,4 +27,4 @@ criterion = torch.nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(classifier.parameters(), lr=0.001, weight_decay=0.0001)
 load_checkpoint("classifier.pth", classifier, optimizer, 0.001,)
 text=""
-print("Думаю человек написавший этот отзыв поставил бы "+predict_rating(text)+" звезду")
+print("Думаю человек написавший этот отзыв поставил бы "+predict_rating(text))
